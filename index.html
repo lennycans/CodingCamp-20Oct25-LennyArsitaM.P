@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mining Company</title>
+  <link rel="stylesheet" href="style.css"> <!-- Panggil CSS -->
+</head>
+<body>
+  <!-- ======== HEADER ======== -->
+  <header>
+    <img src="images/zyy.png"
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Our Profile</a>
+      <a href="#">Portfolio</a>
+      <a href="#message-us">Message Us</a>
+    </nav>
+  </header>
+
+  <!-- ======== BANNER ======== -->
+  <section class="banner">
+    <h2 id="welcome"></h2>
+    <p>
+      Welcome to Mining Cooperation Recruitment!<br>
+      We believe that the future of smarter and more sustainable mining begins with talented individuals like you.<br>
+      Here, you will find exciting career opportunities, a collaborative work environment, and plenty of room to grow.<br>
+      Join our team and help us build the energy of the future! ⚒️🌍
+    </p>
+    <img src="images/1.jpeg" alt="Banner">
+  </section>
+
+  <!-- ======== HEADQUARTER ======== -->
+  <section class="hq">
+    <h2>Explore Our Recruitment Hubs</h2>
+    <div class="hq-locations">
+      <div>
+        <img src="images/jkt.jfif" alt="">
+        <p>Jakarta</p>
+      </div>
+      <div>
+        <img src="images/bdg.jpg" alt="">
+        <p>Bandung</p>
+      </div>
+      <div>
+        <img src="images/sby1.jpeg" alt="">
+        <p>Surabaya</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======== MESSAGE US ======== -->
+  <section class="message" id="message-us">
+    <form id="messageForm">
+      <h3>Message Us</h3>
+      <label for="name">Nama :</label>
+      <input type="text" id="name" required><br>
+
+      <label for="birth">Tanggal Lahir :</label>
+      <input type="date" id="birth" required><br>
+
+      <label>Jenis Kelamin :</label>
+      <input type="radio" name="gender" value="Laki-Laki" required> Laki-Laki
+      <input type="radio" name="gender" value="Perempuan"> Perempuan<br><br>
+
+      <label for="messageText">Pesan :</label>
+      <textarea id="messageText" rows="4" required></textarea><br>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="output-box" id="outputBox">
+      <p>Data yang kamu isi akan muncul di sini...</p>
+    </div>
+  </section>
+
+  <!-- ======== FOOTER ======== -->
+  <footer>
+    Created By Lenny Arsita M.P
+  </footer>
+
+  <script src="script.js"></script> <!-- Panggil JavaScript -->
+</body>
+</html>

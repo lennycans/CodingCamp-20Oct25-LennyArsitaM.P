@@ -1,0 +1,162 @@
+/* ======== CSS STYLE ======== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 20px;
+}
+
+header img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+nav a:hover {
+  background-color: #f0f0f0;
+}
+
+section {
+  padding: 20px;
+}
+
+/* Banner */
+.banner {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 50px 0;
+}
+
+.banner img {
+  width: 80%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* === OUR HEADQUARTER SECTION === */
+.hq {
+  text-align: center;
+  margin-top: 40px;
+}
+
+.hq h2 {
+  margin-bottom: 30px;
+}
+
+.hq-locations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+.hq-locations div {
+  text-align: center;
+}
+
+.hq-locations img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #333;
+  transition: transform 0.3s ease;
+}
+
+.hq-locations img:hover {
+  transform: scale(1.05);
+}
+
+.hq-locations p {
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+/* Message Us */
+.message {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.message form {
+  width: 45%;
+}
+
+.message label {
+  display: inline-block;
+  width: 120px;
+  margin-bottom: 5px;
+}
+
+.message input[type="text"],
+.message input[type="date"],
+.message textarea {
+  width: calc(100% - 130px);
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.message input[type="radio"] {
+  margin-left: 5px;
+}
+
+.message button {
+  padding: 8px 20px;
+  border: 1px solid #333;
+  background-color: #eee;
+  cursor: pointer;
+}
+
+.message button:hover {
+  background-color: #ddd;
+}
+
+.output-box {
+  width: 45%;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+footer {
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .message {
+    flex-direction: column;
+  }
+
+  .message form, .output-box {
+    width: 100%;
+  }
+
+  .hq-locations {
+    flex-direction: column;
+    align-items: center;
+  }
+}
